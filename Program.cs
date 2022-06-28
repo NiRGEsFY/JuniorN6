@@ -12,10 +12,10 @@ namespace JuniorN6
         {
             int howMachImageWeHave = 52;
             int imageOnRow = 3;
-            int excess = (howMachImageWeHave % imageOnRow);
-            int howMuchRows = ((howMachImageWeHave - excess) / imageOnRow);
-            Console.WriteLine("Количество рядов - " + howMuchRows);
-            Console.WriteLine("Осталось картинок - " + (excess));
+            int excessImage = howMachImageWeHave % imageOnRow;
+            int howMuchRowsFulli = ((howMachImageWeHave - excessImage) / imageOnRow);
+            Console.WriteLine("Количество рядов - " + howMuchRowsFulli);
+            Console.WriteLine("Осталось картинок - " + (excessImage));
             Console.ReadLine();
         }
     }
